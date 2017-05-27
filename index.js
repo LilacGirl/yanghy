@@ -7,8 +7,8 @@ app.get('/',function(req,res){
 	res.send('meadowlark travel');
 })
 app.get('/about',function(req,res){
-	res.type('text/plain');
-	res.send('about meadowlark travel');
+	/*res.type('text/plain');
+	res.send('about meadowlark travel');*/
 	res.render('about',{fortune:fortune.getFortune()});
 })
 app.use(function(req,res){
